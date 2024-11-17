@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+{% load static %}
+{% block title %}
+  Details about {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+
+{% block content %}
+    <h1>{{ myfurniture.prodName }}</h1>
+  
+    <p>Price: {{ myfurniture.price }}</p>
+    <p>Availability: {{ myfurniture.availability }}</p>
+
+    <!-- <p>Back to <a href="/furnitures">Furnitures</a></p> -->
+{% endblock %}

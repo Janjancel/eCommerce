@@ -1,0 +1,46 @@
+{% extends "master.html" %}
+{% load static %}
+{% block title %}
+  Products
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+  <title>Document</title>
+
+<!-- 
+  <style>
+
+    #section-1 {
+      height: 756px;
+    }
+
+    #section-2 {
+      height: 500px;
+      background-color: red;
+    }
+  </style> -->
+</head>
+<body>
+  
+{% block content %}
+<main>
+    <section class="section-1">
+        <img src="{% static 'hompage.png' %}" alt="">
+    </section>
+    <section id="section-2">
+      <h1>Products</h1>
+
+      <h3>Furnitures</h3>
+      
+      <p>Check out all our <a href="furnitures/">furnitures</a></p>
+    </section>
+  </main>
+  
+{% endblock %}
+</body>
+</html>

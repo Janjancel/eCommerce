@@ -1,0 +1,9 @@
+.section-1 ,
+#login-body,
+#register-body {
+  background-image: url('./images/hompage.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+
+}
+
